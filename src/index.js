@@ -1,12 +1,19 @@
+import "./styles.css";
+
 import { StrictMode } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ReactDOM from "react-dom";
 
-import App from "./App";
+import PokemonList from "./PokemonList";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<PokemonList />} />
+      </Routes>
+    </BrowserRouter>
   </StrictMode>,
   rootElement
 );
