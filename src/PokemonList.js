@@ -32,10 +32,7 @@ export default function PokemonList() {
           <div className="pokemon--species">
             <div className="pokemon--species--container">
               <div className="pokemon--species--sprite">
-                <img
-                  alt={pokemon.name}
-                  src={`${process.env.PUBLIC_URL}/sprites/${id}.png`}
-                />
+                <img alt={pokemon.name} src={`/sprites/${id + 1}.png`} />
               </div>
               <div className="pokemon--species--name">{pokemon.name}</div>
             </div>
